@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import org.ethereum.geth.Geth;
+import com.github.ethereum.go_ethereum.cmd.Geth;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -87,9 +87,7 @@ public class MainActivity extends AppCompatActivity {
                                     connection.disconnect();
                                 }
                                 Thread.sleep(1000);
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
+                            } catch (Exception e) {}
                         }
                     }
                 }).start();
